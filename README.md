@@ -1,2 +1,2 @@
-Projet_2 - OpencClassrooms - Site Réservia
+Projet 2 pour OpenClassrooms - Site Réservia
 
