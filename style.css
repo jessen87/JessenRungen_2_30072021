@@ -236,6 +236,7 @@ Zone de recherche
     color: #FFF;
     height: 43px;
     padding: 0px 15px;
+    font-weight: bold;
 }
 
 .search-button .textbtn {
@@ -542,7 +543,7 @@ figure:hover {
     justify-content: space-between;
 }
 
-#hebergement h1 i {
+#hebergement h2 i {
     margin: auto 0;
 }
 
@@ -586,8 +587,6 @@ figure:hover {
     display: flex;
     flex-flow: row wrap;
 }
-
-
 
 #activites ul li img {
     height: 100%;
