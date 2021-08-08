@@ -223,13 +223,14 @@ Zone de recherche
 }
 
 .search-button {
-    display: flex;
+    display: block;
     background: #0065FC;
     border: 1px #0065FC solid;
     border-radius: 0 15px 15px 0;
     color: #FFF;
     height: 43px;
     padding: 0px 15px;
+    font-weight: bold;
 }
 
 @media (max-width:640px) {
@@ -526,13 +527,13 @@ figure:hover {
     border-radius: 20px 0 0 20px;
 }
 
-#hebergement h1,
+#hebergement h2,
 #hebergement .stonk {
     display: flex;
     justify-content: space-between;
 }
 
-#hebergement h1 i {
+#hebergement h2 i {
     margin: auto 0;
 }
 
@@ -577,15 +578,6 @@ figure:hover {
     flex-flow: row wrap;
 }
 
-#activites ul li {
-    padding: 3px;
-    background: #FFF;
-    border-radius: 20px;
-    margin: 0 0 30px 0;
-    -webkit-box-shadow: 0 5px 40px -20px rgba(0, 0, 0, .75);
-    -moz-box-shadow: 0 5px 40px -20px rgba(0, 0, 0, .75);
-    box-shadow: 0 5px 40px -20px rgba(0, 0, 0, .75);
-}
 
 #activites ul li img {
     height: 100%;
