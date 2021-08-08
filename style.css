@@ -556,7 +556,7 @@ figure:hover {
     list-style: none;
     display: flex;
     flex-flow: row wrap;
-    padding: 15px 15px;
+    padding-left: 0px;
 }
 
 #ActiviteAMarseille {
