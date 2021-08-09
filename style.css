@@ -17,7 +17,7 @@ a:hover {
 }
 
 h1 {
-    font-size: 1em
+    font-size: 1em;
 }
 
 * {
@@ -100,7 +100,7 @@ header .main-container .header-container {
     .nav-activite {
         text-align: center;
         border-bottom: 3px solid #99999960;
-        min-width: 50%;
+        min-width: 100%;
         margin: auto 0;
         padding: 15px 0;
     }
@@ -192,16 +192,21 @@ header {
 
 .nav-hebergement,
 .nav-activite {
-    order: 2;
     flex: 0 1
 }
 
 .nav-sinscrire {
-    order: 1;
     flex: 0 1 100%;
 }
 
+#header li.nav-activite
+#header li.nav-sinscrire {
+    padding-top: 23px;
+}
 
+@media (max-width::640px) {
+
+}
 /*
 Zone de recherche
 */
@@ -230,6 +235,10 @@ Zone de recherche
     color: #FFF;
     height: 43px;
     padding: 0px 15px;
+    font-weight: bold;
+}
+
+.search-button .textbtn {
     font-weight: bold;
 }
 
@@ -552,7 +561,7 @@ figure:hover {
     margin-left: 25px;
 }
 
-.activiteContainer .flex-container {
+.activiteContainer .grid {
     list-style: none;
     display: flex;
     flex-flow: row wrap;
@@ -586,16 +595,17 @@ figure:hover {
     object-fit: cover;
     border-radius: 20px 20px 0 0;
 }
-
+#activites .group-item .column:first-child{
+    margin-left: 0px;
+}
 @media(min-width: 991px) {
     #activites .group-item {
-        width: 50%;
+        width: 100%;
         display: flex;
+        column-gap: 30px;
     }
     #activites .group-item .columndouble,
     #activites .group-item .column {
-        max-width: 45%;
-        min-width: 45%;
         margin: auto;
     }
     #activites .group-item .column,
@@ -609,32 +619,48 @@ figure:hover {
         height: 92%;
         margin-bottom: -9%;
     }
+
+    #activites .flex-container {
+        max-height: 600px;
+    }    
+}
+
+#activites .group-item {
+     column-gap: 30px;
+     width: 90%;
+     margin: 30px;
+}
+
+#activites .flex-container {
+    display: flex;
+    min-height: 438px;
+    margin-bottom: 30px;
+    column-gap: 30px;
 }
 
 #activites .group-item .column {
     display: flex;
     flex-direction: column;
-    order: 1;
-    flex: 1;
+    flex: 1 1 25%;
 }
 
 #activites .group-item .columndouble {
     display: flex;
     flex-direction: column;
-    order: 2;
-    flex: 0 1 35%;
+    flex: 1 1 25%;
+    column-gap: 30px;
 }
 
 #activites .group-item .item {
     width: 100%;
     background: #FFF;
     border-radius: 20px;
-    margin: 0 0 30px 0;
     -webkit-box-shadow: 0 5px 40px -20px rgba(0, 0, 0, .75);
     -moz-box-shadow: 0 5px 40px -20px rgba(0, 0, 0, .75);
     box-shadow: 0 5px 40px -20px rgba(0, 0, 0, .75);
     cursor: pointer;
     transition: transform .2s;
+    margin-bottom: 30px;
 }
 
 #activites .group-item .item:hover {
@@ -642,8 +668,8 @@ figure:hover {
 }
 
 #activites .group-item .item img {
-    height: 100%;
-    max-height: 100px;
+    height: 90%;
+    max-height: 229px;
     width: 100%;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
