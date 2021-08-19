@@ -2,12 +2,12 @@
 
 @font-face {
     font-family: "Raleway";
-    src: url("police/Raleway-Regular.ttf");
+    src: url("src/police/Raleway-Regular.ttf");
   }
   
   @font-face {
     font-family: "Raleway-thin";
-    src: url("police/Raleway-Thin.ttf");
+    src: url("src/police/Raleway-Thin.ttf");
   }
   
   h1,
