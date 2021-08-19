@@ -319,7 +319,6 @@
   }
   
   .hotelpop {
-    display: flex;
     width: 100%;
     background: white;
     border-radius: 20px;
